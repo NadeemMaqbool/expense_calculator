@@ -13,7 +13,7 @@ export default function ExpenseItem(props) {
         <div className="expense_description">
           <h6 className="expense_title">{title}</h6>
           <p className="expense_details">{details}</p>
-          <div className="expense_price">{amount}</div>
+          <div className="expense_price">$ {amount}</div>
         </div>
       </div>
     </>
