@@ -1,0 +1,25 @@
+.chartsContainer {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.selectOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.label {
+    font-size: 1.0rem;
+    margin-bottom: 0.5rem;
+    color: #C3CEDA;
+}
+
+.options {
+    width: 100px;
+    font-size: 1rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: #C3CEDA;
+}
+}
