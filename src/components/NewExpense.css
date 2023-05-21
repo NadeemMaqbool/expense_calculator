@@ -71,3 +71,10 @@
     color: #404258;
     border: 2px solid #C3CEDA;
 }
+
+.error {
+    color: firebrick;
+    background: #C3CEDA;
+    padding: 5px 26px;
+    border-radius: 5px;
+}

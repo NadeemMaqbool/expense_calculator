@@ -7,6 +7,7 @@ const ExpenseForm = ({ ToggleForm, updateDataForm }) => {
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
   const [details, setDetails] = useState("");
+  const [error, setError] = useState(false);
 
   const handleTitle = (e) => {
     setTitle(e.target.value);
@@ -26,7 +27,10 @@ const ExpenseForm = ({ ToggleForm, updateDataForm }) => {
 
   const SubmitExpenseForm = (e) => {
     e.preventDefault();
-
+    if (title === "" || amount === "" || date === "" || details === "") {
+      setError(true);
+      return;
+    }
     const expenseData = {
       title: title,
       amount: amount,
@@ -40,6 +44,7 @@ const ExpenseForm = ({ ToggleForm, updateDataForm }) => {
     setAmount("");
     setDate("");
     setDetails("");
+    setError(false);
   };
 
   const ToggleExpenseForm = () => {
@@ -48,7 +53,9 @@ const ExpenseForm = ({ ToggleForm, updateDataForm }) => {
 
   return (
     <div className="new_expense_container">
+      {error && <p className="error">Please fix the errors first!</p>}
       <h3>Add New Expense</h3>
+
       <div>
         <form onSubmit={SubmitExpenseForm}>
           <div className="form_row">

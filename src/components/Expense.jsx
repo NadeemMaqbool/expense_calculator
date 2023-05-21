@@ -17,7 +17,7 @@ export default function Expense() {
 
   const filterExpensesData = (year) => {
     setSelectedYear(year);
-    const filteredData = expenses.filter((expense) => {
+    const filteredData = expensesData.filter((expense) => {
       return expense.date.getFullYear().toString() === year;
     });
     setExpensesData(filteredData);
