@@ -1,4 +1,4 @@
-# expense_calculator
+# expense calculator
 A react app for expense calculator
 features:
 - Form to add Expense
