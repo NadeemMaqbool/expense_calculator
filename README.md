@@ -5,3 +5,5 @@ features:
 - Validation on expense Form
 - Expense Listing
 - Filtering on Year
+
+![Scresnhot app](public/expense_app.png)
